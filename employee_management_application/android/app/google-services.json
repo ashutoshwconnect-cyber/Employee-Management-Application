@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "902170768437",
+    "project_id": "em-app-f687f",
+    "storage_bucket": "em-app-f687f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902170768437:android:2dfa52e9f1c87f73552d7c",
+        "android_client_info": {
+          "package_name": "com.example.employee_management_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYXSgDl8yu3-vh6-tyth6vzsF1v5Ru_TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

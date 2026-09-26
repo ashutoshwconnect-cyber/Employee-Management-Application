@@ -1,3 +1,5 @@
+import 'package:employee_management_application/features/auth/presentation/pages/login_page.dart';
+import 'package:employee_management_application/features/auth/presentation/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/employee_providers.dart';
@@ -36,6 +38,19 @@ class DashboardPage extends StatelessWidget {
             icon: const Icon(Icons.filter_list),
             onPressed: () {
               // TODO: Implement filter
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () async {
+              await Provider.of<AuthProvider>(context, listen: false).signOut();
+              if (context.mounted) {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                  (route) => false,
+                );
+              }
             },
           ),
         ],
